@@ -64,7 +64,7 @@ the scores for each run (in a results.txt file) and the raw predictions as
 well (in file predicted.conll), as well as the macro- and micro- averaged
 results in a pkl file, which can be loaded through pandas.
 
-##BiLSTM-CRF experiments
+## BiLSTM-CRF experiments
 
 Once the CRF experiments have been run, one may run the BiLSTM-CRF experiments.
 This is done in two steps. First, train the network on the source (CONLL 2003)
