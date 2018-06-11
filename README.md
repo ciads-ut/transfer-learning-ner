@@ -26,9 +26,9 @@ run the following to install keras-contrib:
 `python setup.py install`
 
 To run the experiments, first make sure all the datasets are in the appropriate
-directory. CONLL 2003 in particular must be placed in the directory
-data/conll2003.  See the README files in the data directory for more
-information.
+directory. The files for the CONLL 2003 dataset (eng.train, eng.testa,
+eng.testb) in particular must be placed in directory `data/conll2003`.
+See the README files in the data directory for more information.
 
 The BiLSTM-CRF experiments require pre-trained word embeddings. We used the
 GloVe word embeddings. Download the pretrained Stanford GloVe embeddings
