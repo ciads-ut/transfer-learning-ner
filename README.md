@@ -32,7 +32,8 @@ See the README files in the data directory for more information.
 
 The BiLSTM-CRF experiments require pre-trained word embeddings. We used the
 GloVe word embeddings. Download the pretrained Stanford GloVe embeddings
-(file glove.6B.100d.txt.gz ) to src/word_embeddings.
+from http://nlp.stanford.edu/data/glove.6B.zip and put file
+`glove.6B.100d.txt.gz` in `src/word_embeddings`.
 
 # Reproducing the experiments
 
