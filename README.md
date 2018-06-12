@@ -35,6 +35,34 @@ GloVe word embeddings. Download the pretrained Stanford GloVe embeddings
 from http://nlp.stanford.edu/data/glove.6B.zip and put file
 `glove.6B.100d.txt.gz` in `src/word_embeddings`.
 
+# Datasets
+
+Due to licensing restrictions, GUM and re3d were the only datasets
+from our paper that could be included in this repository.
+Since each of the datasets comprising re3d
+has a different license, the train/test split of re3d used in our paper
+is not included. However, it can be easily generated following the
+directions in `data/re3d/CONLL-format/data/README.md`.
+
+Instructions for obtaining the other datasets used in the paper are found
+in each of the corresponding dataset directories, together with directions
+for where to place them. The file locations should correspond to those listed
+in the file `src/file_locations.cfg`. Ritter's Twitter dataset, the MIT Movie
+Corpus and the MIT Restaurant Corpus can be downloaded and are already in the
+CONLL 2003 format. The remaining datasets are in different
+formats; tools are included to convert them to the CONLL 2003 format.
+
+In addition, we include instructions for obtaining several other NER
+datasets not used in the COLING paper, but which may be of interest. These
+are: BBN, MalwareTextDB, GMB 1.0.0, Wikigold, AnEM, and WNUT 2017. Of these,
+only Wikigold, AnEM and WNUT 2017 could be shared due to licensing
+restrictions.
+
+# Dataset licenses
+
+For a summary of the dataset licenses, see `data/LICENSES_SUMMARY.rst`. Each
+data directory also includes the license for that dataset.
+
 # Reproducing the experiments
 
 The directory src/experiments contains several subdirectories of the form
