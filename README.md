@@ -46,7 +46,7 @@ directions in `data/re3d/CONLL-format/data/README.md`.
 
 Instructions for obtaining the other datasets used in the paper are found
 in each of the corresponding dataset directories, together with directions
-for where to place them. The file locations should correspond to those listed
+for where to place them. The file locations will correspond to those listed
 in the file `src/file_locations.cfg`. Ritter's Twitter dataset, the MIT Movie
 Corpus and the MIT Restaurant Corpus can be downloaded and are already in the
 CONLL 2003 format. The remaining datasets are in different
