@@ -6,6 +6,8 @@ This repository contains code, datasets, and results for the paper:
 Rodriguez, Caldwell and Liu, "Transfer Learning for Entity Recognition of
 Novel Classes". COLING, 2018.
 
+This paper can be downloaded from http://aclweb.org/anthology/C18-1168
+
 In addition to this, it includes:
 
 - An API to evaluate different combinations of classifiers and transfer
