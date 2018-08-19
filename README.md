@@ -54,9 +54,9 @@ formats; tools are included to convert them to the CONLL 2003 format.
 
 In addition, we include instructions for obtaining several other NER
 datasets not used in the COLING paper, but which may be of interest. These
-are: BBN, MalwareTextDB, GMB 1.0.0, Wikigold, AnEM, and WNUT 2017. Of these,
-only Wikigold, AnEM and WNUT 2017 could be shared due to licensing
-restrictions.
+are: BBN, MalwareTextDB, GMB 1.0.0, Wikigold, AnEM, WNUT 2017, and SEC-filings.
+Of these, only Wikigold, AnEM, WNUT 2017 and SEC-filings could be shared due to
+licensing restrictions.
 
 # Dataset licenses
 
