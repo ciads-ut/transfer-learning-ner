@@ -57,7 +57,7 @@ except:
 import utils
 import classifiers.lstmcrf as lc
 import evaluation
-from experiment import _getlist
+from utils import _getlist
 from stratified_split import writefile
 
 CONLLTAGSET = {'PER','LOC','ORG','MISC'}

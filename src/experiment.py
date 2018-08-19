@@ -26,6 +26,8 @@ from nltk.tokenize import word_tokenize
 import utils
 import transferlearning as tl
 from stratified_split import writefile
+from utils import _getlist
+
 
 def run_experiment(transfer_exp_name):
     """ Run an experiment given in the experiments directory. Some
@@ -296,17 +298,4 @@ def method_param_mappings(method):
         params = {'with_cca': True, 'no_prefix':False, 'exclude_O':True}
 
     return params
-
-#TODO move this to utils file
-def _getlist(config, section, option, ints=False):
-    """ Get a list of config values from the appropriate section of the
-    configuration file.
-
-    """
-    vals = config.get(section, option)
-    if vals is not None:
-        vals = vals.split('\n')
-        if ints:
-            vals = [int(i) for i in vals]
-    return vals
 

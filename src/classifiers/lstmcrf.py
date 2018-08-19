@@ -33,8 +33,7 @@ def predict(model, test, tag2idx, word2idx, tags, max_len, batch_size=32):
     return A
 
 
-#TODO change the name of this function, this is misleading.
-def get_word2idx2(sentences):
+def get_word_dict(sentences):
     words = {}
     for sent in sentences:
         for tok, label in sent:

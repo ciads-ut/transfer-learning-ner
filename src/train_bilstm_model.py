@@ -75,7 +75,7 @@ def get_embeddings():
 
     aggregation = conll03 + aggregation
 
-    words = lc.get_word2idx2(aggregation)
+    words = lc.get_word_dict(aggregation)
     max_len = lc.get_maxlen(aggregation)
 
     # NOTE: max_len was 253 for our experiments.

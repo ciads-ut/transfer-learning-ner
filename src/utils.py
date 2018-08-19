@@ -124,22 +124,6 @@ def get_file_settings(corpus_name):
     pos_pos = int(pos_pos)
     return word_pos, pos_pos, iob_pos, filename_end, sep, IOB #, domain
 
-#TODO this is not used anywhere, remove?
-def iob_to_io(annotated_sentence):
-    """ Input is a list of elements ((w,pos,dom),iob)
-        Returns the list with all the B- prefixes converted to I-prefixes.
-
-    """
-    proper_iob_tokens = []
-    for idx, annotated_token in enumerate(annotated_sentence):
-        word, tag, dom = annotated_token[0]
-        ner = annotated_token[1]
-
-        if ner[0] == 'B':
-            ner = 'I'+ner[1:]
-        proper_iob_tokens.append(((word, tag, dom), ner) )
-    return proper_iob_tokens
-
 
 def iob1_to_iob2(annotated_sentence):
     """ Converts list of annotated sentences with entities encoded in the IOB1
@@ -385,6 +369,19 @@ def read_NER_output(filename):
                 conll_tokens = standard_form_tokens
 
             yield [((w,w), iob) for w, iob in conll_tokens]
+
+def _getlist(config, section, option, ints=False):
+    """ Get a list of config values from the appropriate section of the
+    configuration file.
+
+    """
+    vals = config.get(section, option)
+    if vals is not None:
+        vals = vals.split('\n')
+        if ints:
+            vals = [int(i) for i in vals]
+    return vals
+
 
 # This function is probably not a good idea; it assumes that the entity
 # descriptions in the corpusconfig.cfg file are exactly the same as the ones
