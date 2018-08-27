@@ -18,10 +18,8 @@ containing the nltk datasets.
 
 For more information on the dataset, see:
 
-[1] http://www.itl.nist.gov/iad/894.01/tests/ie-er/er_99/er_99.htm
+http://www.itl.nist.gov/iad/894.01/tests/ie-er/er_99/er_99.htm
 
-[2] Chinchor, Nancy, et al. "1999 Named Entity Recognition Task Definition."
-    MITRE and SAIC (1999)
 
 How the data was converted to CONLL format
 ------------------------------------------
