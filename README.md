@@ -17,6 +17,9 @@ In addition to this, it includes:
   StanfordNER and spacy. To install these, see THIRD_PARTY_SOFTWARE.rst
 - Utility functions for handling datasets that could not be distributed.
 
+NOTE: datasets (beyond those used in this project) and associated utility functions are also located at:
+https://github.com/juand-r/entity-recognition-datasets
+
 # Set up
 
 This code was tested and run on Linux, using Python 2. The list of required
@@ -67,7 +70,8 @@ are:
 - SEC-filings
 
 Of these, only Wikigold, AnEM, WNUT 2017 and SEC-filings could be shared due to
-licensing restrictions.
+licensing restrictions. New NER datasets will be added to
+https://github.com/juand-r/entity-recognition-datasets
 
 # Dataset licenses
 
